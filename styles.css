@@ -188,6 +188,11 @@ input:focus {
         flex-flow: column nowrap;
         align-items: center;
     }
+    .input{
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
     .left {
         padding-left: 0vw;
     }
