@@ -159,6 +159,7 @@ input:focus {
         flex-flow: column;
         height: auto;
         text-align: center;
+        overflow-x: hidden;
     }
     .hero-image {
         width: auto;
