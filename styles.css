@@ -22,8 +22,6 @@
     flex-flow: row wrap;
 }
 
-
-
 .hero-image {
     background-image: url(./aishah-rahman-dmZaS68ITWQ-unsplash.jpg);
     background-position: center;
@@ -54,9 +52,6 @@
     color: white;
 }
 
-
-
-
 .right-side {
     width: 60vw;
     background-color: var(--primary-color);
@@ -67,7 +62,7 @@
 
 .call-to-action {
     font-size: 4rem;
-    margin-bottom: 50px;
+    margin-bottom: 4rem;
 }
 
 .left {
@@ -144,12 +139,65 @@ input:focus {
     height: 4rem;
     width: 4rem;
     position: absolute;
-    left: 95vw;
+    left: 94vw;
     top: 90vh;
-    transition: all 0.15s;
+    transition: transform 0.15s;
 }
 
 .right-side img:hover{
     cursor: pointer;
     transform: scale(1.1);
+}
+
+.right-side img:active{
+    cursor: pointer;
+    transform: scale(1);
+}
+
+@media only screen and (max-width: 1060px) {
+    .container {
+        flex-flow: column;
+        height: auto;
+        text-align: center;
+    }
+    .hero-image {
+        width: auto;
+        height: 20vh;
+        background-size: 100vw;
+    }
+    .logo {
+        background-color: rgba(0, 0, 0, 0.0);
+        position: static;
+        flex-direction: column;
+    }
+    .logo img {
+        height: 4rem;
+        width: 4rem;
+    }
+    .credit {
+        visibility: hidden;
+    }
+    .right-side{
+        width: auto;
+        height: auto;
+    }
+    .call-to-action{
+        margin-bottom: 0rem;
+    }
+    .form-input{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .left {
+        padding-left: 0vw;
+    }
+    .right-side img {
+        position: static;
+    }
+    .right-side img:hover{
+        transform: none;
+    }
+    .right-side img:active{
+        transform: scale(0.9);
+    }
 }
