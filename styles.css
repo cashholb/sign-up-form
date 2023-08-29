@@ -158,6 +158,9 @@ input:focus {
     html, body {
         overflow-x: hidden;
     }
+    body {
+        position: relative;
+    }
 
     .container {
         flex-flow: column;
